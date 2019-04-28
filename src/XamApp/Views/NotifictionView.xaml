@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamApp.Views.NotifictionView">
+    <ContentPage.Resources>
+
+
+
+        <Style TargetType="Frame" >
+            <Setter Property="BackgroundColor" Value="White"/>
+            <Setter Property="CornerRadius" Value="15"/>
+            <Setter Property="HeightRequest" Value="50"/>
+            <Setter Property="BorderColor" Value="Blue"/>
+            <Setter Property="Margin" Value="3"/>
+        </Style>
+
+
+    </ContentPage.Resources>
+    <StackLayout BackgroundColor="White" Orientation="Vertical" >
+
+        <Image Source="d.png"  WidthRequest="60" HeightRequest="60" Margin="0,5,0,5"/>
+
+        <BoxView WidthRequest="40" HeightRequest="60" BackgroundColor="Pink" HorizontalOptions="Center"/>
+
+        <Label Text="کد ارسال شده را اینجا وارد کنید" TextColor="Black" FontSize="15" HorizontalOptions="Center" Margin="0,5,0,0"
+               VerticalOptions="Center"/>
+
+
+        <StackLayout  Orientation="Horizontal" HorizontalOptions="Center" Spacing="10"  BackgroundColor="White">
+
+            <Frame WidthRequest="80" x:Name="frame1"  >
+                <Entry Keyboard="Numeric" TextColor="Black"  FontSize="20" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" MaxLength="1"
+                       HorizontalTextAlignment="Center" Focused="Entry_Focused" Unfocused="Entry_unFocused" />
+
+            </Frame>
+
+            <Frame WidthRequest="80"  x:Name="frame2" >
+                <Entry Keyboard="Numeric" TextColor="Black" FontSize="20" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
+                       HorizontalTextAlignment="Center" MaxLength="1"  Focused="Entry_Focused1" Unfocused="Entry_unFocused1" />
+
+            </Frame>
+
+            <Frame WidthRequest="80" x:Name="frame3" >
+                <Entry Keyboard="Numeric" TextColor="Black" FontSize="20" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
+                       HorizontalTextAlignment="Center" Focused="Entry_Focused2" Unfocused="Entry_unFocused2" MaxLength="1" />
+
+            </Frame>
+
+
+            <Frame WidthRequest="80" x:Name="frame4"
+                 >
+                <Entry Keyboard="Numeric" FontSize="20" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
+                   MaxLength="1"    HorizontalTextAlignment="Center" Focused="Entry_Focused3" Unfocused="Entry_unFocused3" />
+
+            </Frame>
+
+
+
+        </StackLayout>
+
+
+        <Button   x:Name="Button"    Text="تایید"  TextColor="White" BackgroundColor="Green" HorizontalOptions="Center"
+                VerticalOptions="End" WidthRequest="340" HeightRequest="50" CornerRadius="5" Margin="0,10,0,10"/>
+
+    </StackLayout>
+
+
+
+
+</ContentPage>

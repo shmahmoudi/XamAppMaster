@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamApp.Views.ServiceView"
+            Title="سرویس های تکمیل شده"
+             FlowDirection="RightToLeft">
+
+
+    <ContentPage.Resources>
+
+        <Style TargetType="Frame" >
+            <Setter Property="BackgroundColor" Value="White"/>
+            <Setter Property="CornerRadius" Value="15"/>
+            <Setter Property="BorderColor" Value="Blue"/>
+            <Setter Property="Margin" Value="5"/>
+        </Style>
+
+    </ContentPage.Resources>
+    <Grid>
+        <ScrollView Orientation="Vertical">
+            <FlexLayout Direction="Column" JustifyContent="End" BackgroundColor="White" VerticalOptions="StartAndExpand">
+
+                <StackLayout Orientation="Horizontal" BackgroundColor="White" HorizontalOptions="Center"
+                             VerticalOptions="Center" Margin="5,10,8,0"  Spacing="2">
+                    <Button BorderRadius="30" HeightRequest="60" WidthRequest="60"
+          BackgroundColor="Red" />
+
+                    <Button BorderRadius="30" HeightRequest="60" WidthRequest="60"
+          BackgroundColor="Blue"  />
+
+                    <Button BorderRadius="30" HeightRequest="60" WidthRequest="60"
+          BackgroundColor="Pink"  />
+
+                    <Button BorderRadius="30" HeightRequest="60" WidthRequest="60"
+          BackgroundColor="Yellow"  />
+
+                    <Button BorderRadius="30" HeightRequest="60" WidthRequest="60"
+          BackgroundColor="GreenYellow"  />
+
+                    <Button BorderRadius="30" HeightRequest="60" WidthRequest="60"
+          BackgroundColor="Green" />
+
+
+                </StackLayout>
+
+
+                <StackLayout BackgroundColor="White" HeightRequest="50" VerticalOptions="Center" HorizontalOptions="FillAndExpand" >
+
+                    <Label Text="  علی         احمد          خودم           مرتضی             
+                           
+                           " 
+                           FontSize="15" HorizontalOptions="Start"  VerticalOptions="CenterAndExpand"  />
+
+                </StackLayout>
+
+
+
+                <StackLayout  Orientation="Horizontal" HorizontalOptions="End"  Margin="0,10,8,10" BackgroundColor="White">
+                    <BoxView Color="Blue" WidthRequest="20" HeightRequest="20" />
+
+                    <Label TextColor="Black" Text="اعلان ها" FontSize="20" Margin="0,0,8,0"/>
+                </StackLayout>
+
+
+
+
+                <Frame HeightRequest="100">
+
+
+                    <FlexLayout Direction="Column">
+
+
+                        <Label Text="اعلان رسیدن سرویس دهنده به مسیر" TextColor="Black" Font="15" FontAttributes="Bold" 
+                               />
+                        <Switch HorizontalOptions="CenterAndExpand"
+                                FlexLayout.AlignSelf="Start" />
+
+                        <BoxView Color="Black" WidthRequest="1000"  HeightRequest="1" HorizontalOptions="FillAndExpand" />
+
+                        <Switch HorizontalOptions="CenterAndExpand"
+                                FlexLayout.AlignSelf="Start" />
+                        <Label Text="سایر اعلان ها" Font="10" TextColor="Gray"/>
+
+
+                    </FlexLayout>
+                </Frame>
+
+                <Frame HeightRequest="200" >
+                    <FlexLayout Direction="Column">
+                        <Image Source="Setting.png"  FlexLayout.AlignSelf="End" WidthRequest="30" HeightRequest="30"/>
+                        <Label Text="ویرایش حساب کاربری" TextColor="Black" Font="15" FontAttributes="Bold" Margin="2,0,0,0"/>
+                        <Label Text="ویرایش عکس ایمیل و تمام اطلاعات حساب شما" Font="10" TextColor="Gray"/>
+
+                        <BoxView Color="Black"  WidthRequest="1000"  HeightRequest="1" HorizontalOptions="FillAndExpand" />
+
+                        <Image Source="Help.png"  FlexLayout.AlignSelf="End" WidthRequest="30" HeightRequest="30"/>
+                        <Label Text="درباره ما" TextColor="Black" Font="15" FontAttributes="Bold"/>
+                        <Label Text="درباره اپلیکیشن" Font="10" TextColor="Gray"/>
+
+                        <BoxView Color="Black" WidthRequest="1000"  HeightRequest="1" HorizontalOptions="FillAndExpand"/>
+
+                        <Image Source="LogOut.png"  FlexLayout.AlignSelf="End" WidthRequest="30" HeightRequest="30"/>
+                        <Label Text="خروج از حساب کاربری" TextColor="Black" Font="15" FontAttributes="Bold"/>
+                        <Label Text="خداحافظی سخته ولی گاهی لازم است" Font="10" TextColor="Gray"/>
+                    </FlexLayout>
+                </Frame>
+
+                <Frame HeightRequest="50">
+                    <FlexLayout Direction="Column">
+
+                        <Label Text="اعلان رسیدن سرویس دهنده به مسیر" TextColor="Black" Font="15" FontAttributes="Bold"/>
+                        <BoxView Color="Black" WidthRequest="1000"  HeightRequest="1" HorizontalOptions="FillAndExpand"/>
+                        <Label Text="سایر اعلان ها" Font="10" TextColor="Gray"/>
+
+                    </FlexLayout>
+                </Frame>
+
+            </FlexLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>
